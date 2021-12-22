@@ -9,17 +9,27 @@
 	<h1>Welcome to the Internet. Have a look around!</h1>
 	<h3>Please Log in below</h3>
 	
-	<form method="POST" action="">
+	<!-- POST requests obfuscate the parameters from the search bar UNLIKE a GET request -->
+	<form method="POST" action="login"> <!-- The POST request will be sent to http://localhost:8080/FrontControllerDemo/login -->
 		
 		<label>Username: </label>
 		<input type="text" name="username" placeholder="Enter username">
+		<br />
 		<label>Password: </label>
 		<input type="password" name="password" placeholder="Enter password">
-		
+		<br />
 		<!-- This button should send a request (specified by method) to the servlet indicated by "action" -->
 		<input type="submit" value="Log In!">
+	</form>
+	
+	<!-- If someone clicks this button, they retrieve ALL employees in the system -->
+	<form method="GET" action="employees"> <!-- The GET request will be sent to http://localhost:8080/FrontControllerDemo/employees -->
+		
+		<p>To see all employees in the system, please click below</p>
+		<input type="submit" value="Click me!">
 		
 	</form>
+	
 	
 </body>
 </html>

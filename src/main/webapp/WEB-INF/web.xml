@@ -12,6 +12,7 @@
   <servlet-mapping>
     <servlet-name>FrontController</servlet-name>
     <url-pattern>/login</url-pattern>
+    <url-pattern>/employees</url-pattern>
     <url-pattern>/error</url-pattern>
   </servlet-mapping>
   
@@ -19,12 +20,5 @@
   	<error-code>404</error-code>
   	<location>/error</location>
   </error-page>
-  
-  
-  
-  
-  
-  
-  
   
 </web-app>
